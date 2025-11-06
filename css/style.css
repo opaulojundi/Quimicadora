@@ -1,0 +1,143 @@
+/* ======= Estilo Geral ======= */
+body {
+  background: linear-gradient(135deg, #6a0dad, #8e44ad);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  padding: 20px;
+}
+
+/* ======= Logo ======= */
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#logo img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px; /* opcional: suaviza as bordas da logo */
+}
+
+/* ======= Container principal ======= */
+.container {
+  background: #f9f9f9;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  padding: 30px 25px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ======= Título ======= */
+.container h1 {
+  font-size: 2.8rem;
+  color: #6a0dad;
+  margin-bottom: 30px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+/* ======= Campos do Formulário ======= */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+  align-self: flex-start;
+}
+
+input.form-control {
+  width: 100%;
+  border: 2px solid #6a0dad;
+  border-radius: 8px;
+  padding: 8px 10px;
+  transition: 0.2s;
+}
+
+input.form-control:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 5px #a66bd4;
+  outline: none;
+}
+
+/* ======= Botões ======= */
+.btn-primary,
+.btn-calc {
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-calc:hover {
+  background: #8e44ad;
+}
+
+/* ======= Resultado ======= */
+#resultado {
+  background: #eee;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  border-left: 5px solid #6a0dad;
+}
+
+#resultado h4 {
+  color: #ff0000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#resultado p {
+  color: #333;
+  margin: 5px 0;
+}
+
+#resultado span {
+  font-weight: bold;
+}
+
+/* ======= Responsivo ======= */
+@media (max-width: 500px) {
+  body {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 2.2rem;
+  }
+
+  #logo img {
+    max-width: 120px;
+  }
+}

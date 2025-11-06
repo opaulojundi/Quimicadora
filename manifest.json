@@ -1,0 +1,17 @@
+{
+  "name": "Quimicadora",
+  "short_name": "Quimicadora",
+  "description": "Calculadora química simples para fórmulas e compostos.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#6a0dad",
+  "theme_color": "#6a0dad",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
